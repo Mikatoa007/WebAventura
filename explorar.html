@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorando...</title>
     <script src="explorar-codigo/generarMundo.js"></script>
+    <script src="explorar-codigo/inventario.js"></script>
+    <link rel="stylesheet" href="estiloExplorar.css">
 </head>
 <body>
     <h1 id="mundoT">Si estás leyendo esto, ha ocurrido un error</h1>
     <div id ="juego">
+        <h2 id="situacion">Ahora mismo no está pasando nada.</h2>
         <div id="acciones">
             <h2>¿Qué quieres hacer?</h2>
-            <button id="explorar">Explorar</button>
-            <button></button>
+            <button onclick="explorar()">Explorar</button>
+            <button id="inventario" onclick="mirarInventario()">Mirar el inventario</button>
+            <button id="tienda" onclick="window.location.href = 'tienda.html'">Abrir la tienda</button>
         </div>
     </div>
 </body>
