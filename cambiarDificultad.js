@@ -12,42 +12,47 @@
 //     }
 //     alert("El numero es: " + numeroT);
 // }
-var dificultad = 1;
-var nivel = 1;
+function difVieja() {
+    let dif = localStorage.getItem("dificultad");
+    if (dif == 1) {
+        document.getElementById("dificultadT").innerHTML = "Dificultad actual: Fácil";
+    }
+    if (dif == 2) {
+        document.getElementById("dificultadT").innerHTML = "Dificultad actual: Normal";
+    }
+    if (dif == 3) {
+        document.getElementById("dificultadT").innerHTML = "Dificultad actual: Difícil";
+    }
+}
+addEventListener("load", difVieja);
 function cambiarDificultad(){
+    var dificultad = 1;
+    var nivel = 1;
+    var tiendaPermitida = 0;
     var dificultadT = document.getElementById("dificultadT").innerHTML;
     if (dificultadT == "Dificultad actual: No establecida") {
         dificultad = 1;
         nivel = 1;
+        tiendaPermitida = 1;
         document.getElementById("dificultadT").innerHTML = "Dificultad actual: Fácil";
     }
     if (dificultadT == "Dificultad actual: Fácil") {
         nivel = 15;
         dificultad = 2;
+        tiendaPermitida = 1;
         document.getElementById("dificultadT").innerHTML = "Dificultad actual: Normal";
     } else if (dificultadT == "Dificultad actual: Normal") {
         nivel = 30;
         dificultad = 3;
+        tiendaPermitida = 1;
         document.getElementById("dificultadT").innerHTML = "Dificultad actual: Difícil";
     } else {
         nivel = 1;
         dificultad = 1;
+        tiendaPermitida = 1;
         document.getElementById("dificultadT").innerHTML = "Dificultad actual: Fácil";
     }
     localStorage.setItem("nivel", nivel);
     localStorage.setItem("dificultad", dificultad);
-}
-onload = function() {
-    if (localStorage.getItem("dificultad") != null) {
-        dificultad = localStorage.getItem("dificultad");
-        if (dificultad == 1) {
-            document.getElementById("dificultadT").innerHTML = "Dificultad actual: Fácil";
-        }
-        if (dificultad == 2) {
-            document.getElementById("dificultadT").innerHTML = "Dificultad actual: Normal";
-        }
-        if (dificultad == 3) {
-            document.getElementById("dificultadT").innerHTML = "Dificultad actual: Difícil";
-        }
-    }
+    localStorage.setItem("tiendaPermitida", tiendaPermitida);
 }

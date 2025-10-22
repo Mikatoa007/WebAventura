@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <script src="cambiarDificultad.js"></script>
+    <script src="animacionTitulo.js"></script>
+    <script src="personaje/clase.js"></script>
     <link rel="stylesheet" href="estiloInicio.css">
 </head>
 <body>
-    <header>Hola :D</header>
     <h1>Para comenzar haz click en explorar</h1>
     <h2>IMPORTANTE: Debes tener un tipo de dificultad establecida antes de empezar</h2>
     <p><a href="explorar.html">Explorar</a></p>
     <p id="dificultadT">Dificultad actual: No establecida</p>
     <button id="boton" onclick="cambiarDificultad()">Cambia la dificultad</button>
-    <h3>V0.2</h3>
+    <div id="personaje">
+        <h1 id="personajeT">Personaje</h1>
+        <div class="apartado">
+            <p>Clase: </p>
+            <p id="clase">Ninguna</p>
+        </div>
+        <button onclick="elegirClase()">Cambiar clase</button>
+        <div class="apartado">
+            <p>Vida:</p>
+            <p id="vida">Sin establecer</p>
+        </div>
+        <div class="apartado">
+            <p>Cantidad de objetos:</p>
+            <p id="objetosMax">Sin establecer</p>
+        </div>
+    </div>
+    <div id="portada">
+        <h1 id="titulo">Web Aventura</h1>
+    </div>
+    <h3>V0.3</h3>
 </body>
 </html>

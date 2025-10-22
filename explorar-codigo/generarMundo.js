@@ -19,7 +19,9 @@ onload = function() {
     }
 }
 function explorar() {
+    document.getElementById("explorar").setAttribute("disabled", "disabled");
     var nivel = parseFloat(localStorage.getItem("nivel"));
+    localStorage.setItem("tiendaPermitida", 1);
     if (nivel < 15) {
         nivel = nivel + 1;
         localStorage.setItem("nivel", nivel);
@@ -31,13 +33,11 @@ function explorar() {
     } else if (nivel < 45) {
         nivel = nivel + 1;
         localStorage.setItem("nivel", nivel);
-        escribirAnimado(document.getElementById("mundoT"), "el Infierno");;
+        escribirAnimado(document.getElementById("mundoT"), "el Infierno");
     } else if (nivel >= 45) {
         window.location.href = "victoria.html";
     }
 }
-
-
 function escribirAnimado(elemento, texto) {
     let i = elemento.innerHTML.length;
     const timerB = setInterval(function() {
@@ -53,6 +53,7 @@ function escribirAnimado(elemento, texto) {
                     i++;
                 } else {
                     clearInterval(timer);
+                    document.getElementById("explorar").removeAttribute("disabled");
                 }
             }, 50);    }
     }, 40);
