@@ -1,4 +1,3 @@
-
 function claseInit() {
     let clase = localStorage.getItem("clase");
     if (clase == null) {
@@ -8,6 +7,8 @@ function claseInit() {
         document.getElementById("clase").innerHTML = localStorage.getItem("clase");
         document.getElementById("vida").innerHTML = localStorage.getItem("vida");
         document.getElementById("objetosMax").innerHTML = localStorage.getItem("objetosMax");
+        document.getElementById("ataque").innerHTML = localStorage.getItem("ataque");
+        document.getElementById("monedas").innerHTML = localStorage.getItem("monedas");
     }
 };
 addEventListener("load", claseInit);
@@ -20,6 +21,10 @@ function elegirClase() {
         localStorage.setItem("vida", 30);
         document.getElementById("objetosMax").innerHTML = 3;
         localStorage.setItem("objetosMax", 3);
+        document.getElementById("ataque").innerHTML = 3;
+        localStorage.setItem("ataque", 3);
+        document.getElementById("monedas").innerHTML = 5;
+        localStorage.setItem("monedas", 5);
         localStorage.setItem("objeto1", "Ninguno");
         localStorage.setItem("objeto2", "Ninguno");
         localStorage.setItem("objeto3", "Ninguno");
@@ -31,6 +36,10 @@ function elegirClase() {
         localStorage.setItem("vida", 15);
         document.getElementById("objetosMax").innerHTML = 2;
         localStorage.setItem("objetosMax", 2);
+        document.getElementById("ataque").innerHTML = 1;
+        localStorage.setItem("ataque", 1);
+        document.getElementById("monedas").innerHTML = 15;
+        localStorage.setItem("monedas", 15);
         localStorage.setItem("objeto1", "Ninguno");
         localStorage.setItem("objeto2", "Ninguno");
         localStorage.removeItem("objeto3");
@@ -42,6 +51,10 @@ function elegirClase() {
         localStorage.setItem("vida", 25);
         document.getElementById("objetosMax").innerHTML = 4;
         localStorage.setItem("objetosMax", 4);
+        document.getElementById("ataque").innerHTML = 2;
+        localStorage.setItem("ataque", 2);
+        document.getElementById("monedas").innerHTML = 10;
+        localStorage.setItem("monedas", 10);
         localStorage.setItem("objeto1", "Ninguno");
         localStorage.setItem("objeto2", "Ninguno");
         localStorage.setItem("objeto3", "Ninguno");
@@ -52,6 +65,10 @@ function elegirClase() {
         document.getElementById("vida").innerHTML = 30;
         localStorage.setItem("vida", 30);
         document.getElementById("objetosMax").innerHTML = 3;
+        document.getElementById("ataque").innerHTML = 3;
+        localStorage.setItem("ataque", 3);
+        document.getElementById("monedas").innerHTML = 5;
+        localStorage.setItem("monedas", 5);
         localStorage.setItem("objetosMax", 3);
         localStorage.setItem("objeto1", "Ninguno");
         localStorage.setItem("objeto2", "Ninguno");

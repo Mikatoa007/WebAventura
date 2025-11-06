@@ -6,6 +6,7 @@
     <title>Explorando...</title>
     <script src="explorar-codigo/generarMundo.js"></script>
     <script src="explorar-codigo/inventario.js"></script>
+    <script src="explorar-codigo/combate.js"></script>
     <link rel="stylesheet" href="estiloExplorar.css">
 </head>
 <body>
@@ -16,7 +17,27 @@
             <h2>¿Qué quieres hacer?</h2>
             <button id="explorar" onclick="explorar()">Explorar</button>
             <button id="inventario" onclick="mirarInventario()">Mirar el inventario</button>
-            <a id="tienda" href="tienda.html" target="_blank"><button>Abrir la tienda</button></a>
+            <a id="tienda" href="tienda.html"><button>Abrir la tienda</button></a>
+        </div>
+        <div id="jugadorActualmente">
+            <div class="statJugador">
+                <p>Vida del jugador:</p>
+                <p id="vidaJUGADOR">0</p>
+            </div>
+            <div class="statJugador">
+                <p>Ataque del jugador:</p>
+                <p id="ataqueJUGADOR">0</p>
+            </div>
+        </div>
+        <div id="inventarioObjs">
+            <div class="apartadoObjsInv">
+                <p>Objeto 1:</p>
+                <div class="objsInv" id="objInv1">nada</div>
+            </div>
+            <div class="apartadoObjsInv">
+                <p>Objeto 2:</p>
+                <div class="objsInv" id="objInv2">nada</div>
+            </div>
         </div>
     </div>
 </body>

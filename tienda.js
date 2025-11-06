@@ -1,4 +1,4 @@
-const valores = ['Normal1', 'Normal2', 'Normal3','Normal4','Normal5','Normal6','Normal7','Normal8','Normal9','Normal10'];
+const valores = ['Manzana', 'Guantes', 'Pala','Normal4','Normal5','Normal6','Normal7','Normal8','Normal9','Normal10'];
 const valoresRaros = ['Raro1', 'Raro2', 'Raro3', 'Raro4', 'Raro5'];
 
 let objetoTienda1 = localStorage.getItem("objetoTienda1");
@@ -65,4 +65,5 @@ onload = function() {
         console.log(tiendaPermitida);
         localStorage.setItem("tiendaPermitida", 0);
     }
+    document.getElementById("monedas").innerHTML = localStorage.getItem("monedas");
 }

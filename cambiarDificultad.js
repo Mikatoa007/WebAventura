@@ -55,4 +55,6 @@ function cambiarDificultad(){
     localStorage.setItem("nivel", nivel);
     localStorage.setItem("dificultad", dificultad);
     localStorage.setItem("tiendaPermitida", tiendaPermitida);
+    localStorage.setItem("enemigo", "0");
+    localStorage.setItem("situacion", "null");
 }

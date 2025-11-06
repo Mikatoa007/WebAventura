@@ -34,8 +34,35 @@ div{
     font-weight: bold;
 }
 #inventario{
-    background-color: rgb(172, 50, 50);
-
+    background-color: rgb(233, 85, 85);
+}
+#inventarioObjs{
+    width: 200px;
+    position: relative;
+    top: 50%;
+    background-color: #59e4c6;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.objsInv{
+    margin: auto;
+}
+.apartadoObjsInv{
+    display: flex;
+    right: 0px;
+    left: 0px;
+}
+.statJugador{
+    display: flex;
+    width: 150px;
+    position: relative;
+    top: 50%;
+    background-color: #59e4c6;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+    justify-content: space-around;
 }
 #acciones button:hover{
     box-shadow: 0px 0px 10px 4px rgba(50,50,50,0.75);
@@ -43,4 +70,26 @@ div{
 #tienda{
     text-decoration: none;
     color: black;
+}
+#interComba{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    background-color: red;
+    position: absolute;
+    left: 80%;
+    top: 10%;
+}
+#nivelSubir{
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 90px;
+    background-color: rgb(101, 255, 219);
+    position: absolute;
+    left: 100vh;
+    top: 20%;
 }

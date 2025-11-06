@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    font-size: 18px;
+}
+#monedasStats{
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#objetos{
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: brown;
+}
+.objeto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    background-color: rgb(255, 209, 134);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}

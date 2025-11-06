@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda :D</title>
     <script src="tienda.js"></script>
+    <script src="comprarObjeto.js"></script>
+    <link rel="stylesheet" href="tienda.css">
 </head>
 <body>
-    <p>De momento no hay nadie en la tienda...</p>
-    <p id="objeto1">Objeto1</p>
-    <p id="objeto2">Objeto2</p>
-    <p id="objeto3">Objeto3</p>
+    <h1>Tienda</h1>
+    <div id="monedasStats">
+        <h3>Tus monedas:</h3>
+        <p id="monedas">0</p>
+    </div>
+    <div id="objetos">
+        <div class="objeto">
+            <p id="objeto1">Objeto1</p>
+            <button onclick="comprarObjeto1()">Comprar</button>
+        </div>
+        <div class="objeto">
+            <p id="objeto2">Objeto2</p>
+            <button onclick="comprarObjeto2()">Comprar</button>
+        </div>
+        <div class="objeto">
+            <p id="objeto3">Objeto3</p>
+            <button onclick="comprarObjeto3()">Comprar</button>
+        </div>
+    </div>
+    <button onclick=window.location.href="explorar.html">Volver a explorar</button>
 </body>
 </html>
